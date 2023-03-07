@@ -52,6 +52,11 @@ while encoder_decoder:
         print("Your password has been encoded and stored!\n")
     #elif choice == "2":
         #print(f'The encode password is {encoded_password}')
+    # Amelia Wazio added option 2
+    elif choice == "2":
+        password = input('Please enter your password to encode: ")
+        decode(password)
+        print(f'The encoded password is {password}, and the original password is {enc_string}.')
 
     # This will make you get out from the program
     elif choice == "3":
