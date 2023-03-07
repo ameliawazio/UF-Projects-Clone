@@ -54,7 +54,7 @@ while encoder_decoder:
         #print(f'The encode password is {encoded_password}')
     # Amelia Wazio added option 2
     elif choice == "2":
-        password = input('Please enter your password to encode: ")
+        password = input('Please enter your password to encode: ')
         decode(password)
         print(f'The encoded password is {password}, and the original password is {enc_string}.')
 
