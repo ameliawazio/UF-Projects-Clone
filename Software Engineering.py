@@ -10,6 +10,23 @@ def encode(password):
     return encoded_password
 
 # def decode(): '''will be here'''
+# Amelia Wazio
+def decode(password):# Decoding function for Najib Mosquera
+
+    enc_string = ''
+    password = str(password)
+    for num in password:
+        num = int(num)
+        password = int(password)
+        if num >= 3:
+            enc_num = (num - 3)
+            enc_num = str(enc_num)
+            enc_string += enc_num
+        else:
+            enc_num = ((num + 10) - 3) # For numbers that would be negative
+            enc_num = str(enc_num)
+            enc_string += enc_num
+    return enc_string
 
 # Menu in function for easier recall
 def menu():
